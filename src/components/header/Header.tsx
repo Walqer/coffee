@@ -1,21 +1,11 @@
-import styled from 'styled-components'
-import { ReactNode } from 'react'
+
 import {Navbar} from '../navbar/Navbar'
 import {Container} from '../container/Container'
+import { HeaderProps } from './header.types'
+import { StyledHeader } from './header.styles'
 
-const StyledHeader = styled.header<{ backgroundImage: string,padding: string }>`
-    background-image: url(${props => props.backgroundImage});
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    padding: ${props => props.padding};
-    text-align: center;
-`
-interface HeaderProps{
-    background: string;
-    padding: string;
-    children: ReactNode;
-}
+
+
 
 export function Header({background,padding, children}:HeaderProps ){
     return (

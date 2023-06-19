@@ -1,18 +1,6 @@
-import styled from 'styled-components'
-import { CoffeeCard, CoffeeCardItem } from '../coffee-card/CoffeeCard'
-
-interface CofeeCardListProps {
-    data: CoffeeCardItem[]
-}
-
-const StyledCardList = styled.ul`
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
+import { CoffeeCard } from '../coffee-card/CoffeeCard'
+import { StyledCardList } from './coffee-card-list.styles'
+import { CofeeCardListProps } from './coffee-card-list.types'
 
 export function CoffeeCardList({ data }: CofeeCardListProps) {
     return (

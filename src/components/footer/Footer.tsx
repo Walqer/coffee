@@ -1,16 +1,7 @@
-import styled from "styled-components"
 import {Navbar} from "../navbar/Navbar"
 import {Beans} from "../beans/Beans"
+import { StyledFooter } from "./footer.styles"
 
-const StyledFooter = styled.footer`
-    padding-top: 55px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    nav{
-        margin-left: 73px;
-    }
-`
 
 export function Footer() {
   return (

@@ -1,19 +1,19 @@
-import {Beans} from './components/beans/Beans'
-import {Button} from './components/button/Button'
-import {Header} from './components/header/Header'
-import {MainTitle} from './components/main-title/MainTitle'
-import {SectionTitle} from './components/section-title/SectionTitle'
+import { Beans } from './components/beans/Beans'
+import { Button } from './components/button/Button'
+import { Header } from './components/header/Header'
+import { MainTitle } from './components/main-title/MainTitle'
+import { SectionTitle } from './components/section-title/SectionTitle'
 import backgroundImage from './assets/img/main-bg.jpg'
 import paperBackground from './assets/img/paper-bg.jpg'
-import {Section} from './components/section/Section'
-import {Container} from './components/container/Container'
-import {Paragraph} from './components/paragraph/Paragraph'
-import {CoffeeCardList} from './components/coffee-card-list/CoffeeCardList'
-import { CoffeeCardItem } from './components/coffee-card/CoffeeCard'
+import { Section } from './components/section/Section'
+import { Container } from './components/container/Container'
+import { Paragraph } from './components/paragraph/Paragraph'
+import { CoffeeCardList } from './components/coffee-card-list/CoffeeCardList'
+import { CoffeeCardItem } from './components/coffee-card/coffee-card.types'
 import solimoIMG from './assets/img/solimo.jpg'
 import prestoIMG from './assets/img/presto.jpg'
 import aromisticoIMG from './assets/img/aromistico.jpg'
-import {Footer} from './components/footer/Footer'
+import { Footer } from './components/footer/Footer'
 
 const cardList: CoffeeCardItem[] = [
     {
@@ -101,9 +101,7 @@ export function App() {
                     <CoffeeCardList data={cardList} />
                 </Container>
             </Section>
-            <Footer/>
+            <Footer />
         </>
     )
 }
-
-

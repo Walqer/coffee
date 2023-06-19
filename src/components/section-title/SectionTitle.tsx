@@ -1,21 +1,5 @@
-import { ReactNode } from 'react'
-import styled from 'styled-components'
-
-interface SectionTitleProps {
-    fontSize: string
-    color: string
-    lineHeight: string
-    margin: string
-    children: ReactNode
-}
-
-const StyledSectionTitle = styled.h2<SectionTitleProps>`
-    font-size: ${(props) => props.fontSize};
-    line-height: ${(props) => props.lineHeight};
-    color: ${(props) => props.color};
-    margin: ${(props) => props.margin};
-    text-align: center;
-`
+import { StyledSectionTitle } from "./section-title.styles";
+import { SectionTitleProps } from "./section-title.types";
 
 export function SectionTitle({
     fontSize,
