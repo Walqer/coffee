@@ -14,9 +14,8 @@ const StyledParagraph = styled.p<ParagraphProps>`
     margin: ${props => props.margin};
 
 `
-function Paragraph({children,textAlign,margin}:ParagraphProps) {
+export function Paragraph({children,textAlign,margin}:ParagraphProps) {
   return (
     <StyledParagraph margin={margin} textAlign={textAlign}>{children}</StyledParagraph>
   )
 }
-export default Paragraph

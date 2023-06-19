@@ -33,7 +33,7 @@ const StyledCard = styled.li`
     }
 `
 
-function CoffeeCard({ img, title, price }: CoffeeCardItem) {
+export function CoffeeCard({ img, title, price }: CoffeeCardItem) {
     return (
         <StyledCard>
             <img src={img} alt={title} />
@@ -44,4 +44,3 @@ function CoffeeCard({ img, title, price }: CoffeeCardItem) {
         </StyledCard>
     )
 }
-export default CoffeeCard

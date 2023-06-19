@@ -8,9 +8,8 @@ const StyledMainTitle = styled.h1`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
-function MainTitle({children}:PropsWithChildren) {
+export function MainTitle({children}:PropsWithChildren) {
   return (
     <StyledMainTitle>{children}</StyledMainTitle>
   )
 }
-export default MainTitle

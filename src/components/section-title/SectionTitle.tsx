@@ -17,7 +17,7 @@ const StyledSectionTitle = styled.h2<SectionTitleProps>`
     text-align: center;
 `
 
-function SectionTitle({
+export function SectionTitle({
     fontSize,
     color,
     margin,
@@ -35,4 +35,3 @@ function SectionTitle({
         </StyledSectionTitle>
     )
 }
-export default SectionTitle

@@ -41,7 +41,7 @@ const StyledBeans = styled.div<BeansProps>`
     }
 `
 
-function Beans({ color, margin }: BeansProps) {
+export function Beans({ color, margin }: BeansProps) {
     return <StyledBeans color={color} margin={margin} />
 }
-export default Beans
+

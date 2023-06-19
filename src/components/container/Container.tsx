@@ -9,9 +9,8 @@ interface ContainerProps{
   children: ReactNode,
   width: string,
 }
-function Container({children,width}:ContainerProps) {
+export function Container({children,width}:ContainerProps) {
   return (
     <StyledContainer width={width}>{children}</StyledContainer>
   )
 }
-export default Container

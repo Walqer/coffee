@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { ReactNode } from 'react'
-import Navbar from '../navbar/Navbar'
-import Container from '../container/Container'
+import {Navbar} from '../navbar/Navbar'
+import {Container} from '../container/Container'
 
 const StyledHeader = styled.header<{ backgroundImage: string,padding: string }>`
     background-image: url(${props => props.backgroundImage});
@@ -17,7 +17,7 @@ interface HeaderProps{
     children: ReactNode;
 }
 
-function Header({background,padding, children}:HeaderProps ){
+export function Header({background,padding, children}:HeaderProps ){
     return (
         <StyledHeader padding={padding} backgroundImage={background}>
             <Container width='1081px'>
@@ -27,4 +27,3 @@ function Header({background,padding, children}:HeaderProps ){
         </StyledHeader>
     )
 }
-export default Header

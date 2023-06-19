@@ -14,11 +14,10 @@ const StyledSection = styled.section<SectionProps>`
     background-position: center;
     text-align: center;
 `
-function Section({ padding, background, children }: SectionProps) {
+export function Section({ padding, background, children }: SectionProps) {
     return (
         <StyledSection padding={padding} background={background}>
             {children}
         </StyledSection>
     )
 }
-export default Section

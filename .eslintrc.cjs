@@ -18,6 +18,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-default-export': 'error',
 
   },
 }

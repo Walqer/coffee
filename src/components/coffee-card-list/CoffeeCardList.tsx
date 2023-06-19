@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import CoffeeCard, { CoffeeCardItem } from '../coffee-card/CoffeeCard'
+import { CoffeeCard, CoffeeCardItem } from '../coffee-card/CoffeeCard'
 
 interface CofeeCardListProps {
     data: CoffeeCardItem[]
@@ -14,14 +14,13 @@ const StyledCardList = styled.ul`
     align-items: center;
 `
 
-function CoffeeCardList({ data }: CofeeCardListProps) {
+export function CoffeeCardList({ data }: CofeeCardListProps) {
     return (
         <StyledCardList>
             {data.map((item) => {
                 const { img, price, title } = item
-                return <CoffeeCard img={img} price={price} title={title} />
+                return <CoffeeCard key={title} img={img} price={price} title={title} />
             })}
         </StyledCardList>
     )
 }
-export default CoffeeCardList

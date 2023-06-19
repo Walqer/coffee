@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Navbar from "../navbar/Navbar"
-import Beans from "../beans/Beans"
+import {Navbar} from "../navbar/Navbar"
+import {Beans} from "../beans/Beans"
 
 const StyledFooter = styled.footer`
     padding-top: 55px;
@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
     }
 `
 
-function Footer() {
+export function Footer() {
   return (
     <StyledFooter>
        <Navbar color="black"/>
@@ -20,4 +20,3 @@ function Footer() {
     </StyledFooter>
   )
 }
-export default Footer

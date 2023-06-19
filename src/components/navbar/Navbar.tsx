@@ -36,7 +36,7 @@ const StyledNavbar = styled.nav<{ color: NavbarProps['color'] }>`
     }
 `
 
-function Navbar({ color }: NavbarProps) {
+export function Navbar({ color }: NavbarProps) {
     return (
         <StyledNavbar color={color}>
             <ul>
@@ -53,4 +53,3 @@ function Navbar({ color }: NavbarProps) {
         </StyledNavbar>
     )
 }
-export default Navbar
